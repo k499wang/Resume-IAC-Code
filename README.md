@@ -14,7 +14,6 @@ Imagine if you accidentally delete the infrastructure for your resume or want to
 
 1. **Terraform**: Install [Terraform](https://www.terraform.io/downloads.html).
 2. **Cloud Provider Account**: An active account with AWS, with proper IAM credentials.
-3. 
 
 
 # Infrastructure Components
