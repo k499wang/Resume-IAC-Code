@@ -26,6 +26,10 @@ This project consists of several key components:
 - Database: A DynamoDB table for storing metadata (e.g., views).
 - API: A serverless API using AWS Lambda and API Gateway to interact with the database.
 
+The overall workflow can be modelled below: 
+
+![Decision tree](https://github.com/user-attachments/assets/27696931-69ed-45eb-bb20-2e5f3d51192e)
+
 # Execution Plan
 
 Preview the execution plan with the following command:
