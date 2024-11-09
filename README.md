@@ -14,7 +14,6 @@ Imagine if you accidentally delete the infrastructure for your resume or want to
 
 1. **Terraform**: Install [Terraform](https://www.terraform.io/downloads.html).
 2. **Cloud Provider Account**: An active account with AWS, with proper IAM credentials.
-3. 
 
 
 # Infrastructure Components
@@ -26,6 +25,10 @@ This project consists of several key components:
 - DNS Setup: Route 53 for DNS management, pointing your domain to the CloudFront distribution.
 - Database: A DynamoDB table for storing metadata (e.g., views).
 - API: A serverless API using AWS Lambda and API Gateway to interact with the database.
+
+The overall workflow can be modelled below: 
+
+![Decision tree](https://github.com/user-attachments/assets/27696931-69ed-45eb-bb20-2e5f3d51192e)
 
 # Execution Plan
 
