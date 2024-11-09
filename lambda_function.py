@@ -5,8 +5,9 @@ dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('Cloud-Resume-Database')
 
 def lambda_handler(event, context):
-    # Retrieve user IP address from headers
+    # Retrieve user IP address from CloudFront headers
     user_ip = event['headers'].get('x-forwarded-for')
+    print(user_ip)
 
     # Check if the IP already exists in the database with a different ID (e.g., '2')
     ip_response = table.get_item(Key={'id': '2'})
@@ -28,7 +29,4 @@ def lambda_handler(event, context):
         # If IP is not unique, get the current view count without incrementing
         views = table.get_item(Key={'id': '1'})['Item']['views']
 
-    return {
-        'statusCode': 200,
-        'body': json.dumps(views)
-    }
+    return views
